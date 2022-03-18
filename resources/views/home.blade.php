@@ -8,18 +8,43 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <script src="js/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Portofolio Rega</title>
   </head>
+  
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top opacity-75">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Portofolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse dropdown" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse dropdown" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
+
+            <div class="header-wrapper" type="button" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <div class="nav-but-wrap">
+                <div class="menu-icon hover-target">
+                  <span class="menu-icon__line menu-icon__line-left"></span>
+                  <span class="menu-icon__line"></span>
+                  <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>          
+              </div>          
+            </div>
+            <div class="nav">
+                <div class="nav__content">
+                  <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">home</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">studio</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">news</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">contact</a></li>
+                  </ul>
+                </div>
+            </div>
             
             <div class="collapse navbar-collapse navbar-nav justify-content-end" id="navbarScroll">
                 <div class="navbar-nav">
@@ -43,13 +68,13 @@
 
 
     <section class="about" id="about">
-      <div class="contentBx">
+      <div class="contentBx reveal2">
         <h2 class="titleText">Journey To Success</h2>
         <p class="text"><?php echo $desc2; ?></p>
-        <a href="profile.html" class="btn">More Stories</a>
+        <a href="profile" class="btn">More Stories</a>
       </div>
 
-      <div class="imgBx">
+      <div class="imgBx reveal">
         <img src="img/img1.jpg" class="fitBg">
       </div>
     </section>
@@ -59,33 +84,43 @@
 	  </section>
 
     <section>
+      <div class="content reveal">
+        <h2 class="titleText">Achievements</h2>
+        <p class="text"><?php echo $desc3; ?></p>
+      </div>
       <div class="row row-cols-1 row-cols-md-3 g-4 destinationList">
-        <div class="col box">
-          <div class="card h-100 bg-dark">
-            <img src="img/dicoding_ios.jpg" class="card-img-top" alt="iOS Certficate">
-            <div class="card-body text-light">
-              <h5 class="card-title">Basic iOS App Development</h5>
-              <p class="card-text">Dicoding Academy</p>
+        <div class="col box reveal">
+          <a href="achievements" class="text-decoration-none">
+            <div class="card h-100 bg-dark">
+              <img src="img/dicoding_ios.jpg" class="card-img-top" alt="iOS Certficate">
+              <div class="card-body text-light">
+                <h5 class="card-title">Basic iOS App Development</h5>
+                <p class="card-text">Dicoding Academy</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col box">
-          <div class="card h-100 bg-dark">
-            <img src="img/dicoding_web.jpg" class="card-img-top" alt="Web Certficate">
-            <div class="card-body text-light">
-              <h5 class="card-title">Basic Web Programming</h5>
-              <p class="card-text">Dicoding Academy</p>
+        <div class="col box reveal">
+          <a href="achievements" class="text-decoration-none">
+            <div class="card h-100 bg-dark">
+              <img src="img/dicoding_web.jpg" class="card-img-top" alt="Web Certficate">
+              <div class="card-body text-light">
+                <h5 class="card-title">Basic Web Programming</h5>
+                <p class="card-text">Dicoding Academy</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col box">
-          <div class="card h-100 bg-dark">
-            <img src="img/dicoding_andro.jpg" class="card-img-top" alt="Android Certficate">
-            <div class="card-body text-light">
-              <h5 class="card-title">Basic Android App Development</h5>
-              <p class="card-text">Dicoding Academy</p>
+        <div class="col box reveal">
+          <a href="achievements" class="text-decoration-none">
+            <div class="card h-100 bg-dark">
+              <img src="img/dicoding_andro.jpg" class="card-img-top" alt="Android Certficate">
+              <div class="card-body text-light">
+                <h5 class="card-title">Basic Android App Development</h5>
+                <p class="card-text">Dicoding Academy</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
